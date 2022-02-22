@@ -1,17 +1,15 @@
 let numbers = [2,1,4,5,6,3,7,8,1,4,6,8,1,5,7,8,3]
-
-for (let currentPosition = 0; currentPosition < numbers.length ; currentPosition++) {
-    for (
-        let compareWithPosition = currentPosition+1;
-        compareWithPosition < numbers.length;
-        compareWithPosition++
+console.log("Desordenados", numbers)
+for(let outer = 0; outer < numbers.length; outer++){
+    for(let inner = outer + 1; inner < numbers.length; inner++
     ){
-        if (numbers[currentPosition] > numbers[compareWithPosition]) {
+        if(numbers[outer] > numbers[inner]){
             let temp = null;
-            temp = numbers[currentPosition]
-            numbers[currentPosition] = numbers[compareWithPosition];
-            numbers[compareWithPosition] = temp;
+            temp = numbers[outer];
+            numbers[outer] = numbers[inner];
+            numbers[inner] = temp;
+            console.log("proceso", numbers)            
         }
     }
 }
-console.log(numbers)
+console.log("Ordenados", numbers)
