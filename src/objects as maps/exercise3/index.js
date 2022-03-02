@@ -20,8 +20,37 @@ const people = [
         time: 109.09
     },
 ]
+console.log(people[1].time)
 
-// Your code here
+function aFasterThanB (a, b) {
+    return people[a].time > people[b].time
+}
 
-sort(aFasterThanB, numbers)
-sort(bFasterThanA, numbers)
+function bFasterThanA (a,b) {
+    return people[a].time < people[b].time
+}
+
+function swap (idxA, idxB, array) {
+    if(true){
+        let swapVar = null;
+        swapVar = array[idxA]
+        array[idxA] = array[idxB]
+        array[idxB] = swapVar
+    }
+}
+
+function sort (comparator, array) {
+    for ( let currentIdx = 0 ; currentIdx < array.length-1 ; currentIdx++) {
+        for ( let nextIdx = currentIdx+1 ; nextIdx < array.length ; nextIdx++ ) {
+            if (
+                comparator(currentIdx, nextIdx)
+            ) swap (currentIdx, nextIdx, array)
+        }
+    }
+}
+
+console.log(people);
+sort(aFasterThanB, people)
+console.log(people);
+sort(bFasterThanA, people)
+console.log(people);
