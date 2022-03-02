@@ -22,3 +22,4 @@ const chrono = [
 ]
 
 // Put you code here
+console.log(chrono.sort((a,b)=>a.time - b.time))
