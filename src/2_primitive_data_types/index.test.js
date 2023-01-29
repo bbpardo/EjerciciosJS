@@ -23,5 +23,5 @@ test("noValue value is undefined",()=>{
 })
 
 test("unknownValue value is null",()=>{
-    expect(unknownValue).toEqual(null)
+    expect(unknownValue).toBeNull()
 })
