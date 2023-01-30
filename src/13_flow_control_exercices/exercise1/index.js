@@ -9,9 +9,6 @@ for (let item of numbers) {
 
 }
 
-console.log("odd:", odd);
-console.log("even:", even);
-
 module.exports = {
     numbers,
     odd,
