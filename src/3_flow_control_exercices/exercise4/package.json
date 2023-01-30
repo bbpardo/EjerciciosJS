@@ -1,0 +1,15 @@
+{
+  "name": "exercise4",
+  "version": "1.0.0",
+  "description": "[index.js](index.js) debería de imprimir la suma de todos los números en el array ```numbers``` pero no funciona.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
