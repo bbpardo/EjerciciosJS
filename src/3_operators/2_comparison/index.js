@@ -1,16 +1,16 @@
 /**
- * 5 === 2 -> false
- * 5 > 2 -> true
- * 5 < 2 -> false
- * 5 > 5 -> false
- * 5 < 5 -> false
- * 5 >= 5 -> true
- * 5 <= 5 -> true
- * 💀 5 == "5" -> true 💀
- * 💀 1 == true -> true 💀
- * 5 === "5" -> false // strict equality comparison
- * 1 === true -> false // strict equality comparison
- * 99 !== "99" -> true // not equal
+ * 5 === 2 👉 false
+ * 5 > 2 👉 true
+ * 5 < 2 👉 false
+ * 5 > 5 👉 false
+ * 5 < 5 👉 false
+ * 5 >= 5 👉 true
+ * 5 <= 5 👉 true
+ * 💀 5 == "5" 👉 true 💀
+ * 💀 1 == true 👉 true 💀
+ * 5 === "5" 👉 false // strict equality comparison
+ * 1 === true 👉 false // strict equality comparison
+ * 99 !== "99" 👉 true // strict not equal
  * 
  * Exercise:
  * - Replace the ❓ with the comparison operator who provides a true for each expression.
@@ -26,9 +26,8 @@ let notEqual = "1" ❓ 1
  * Don't to change next lines.
  */
 module.exports = {
-    productPrize,
-    VATPercentage,
-    VATRatio,
-    VATValue,
-    total,
+    greater,
+    equal,
+    minor,
+    notEqual,
 }
