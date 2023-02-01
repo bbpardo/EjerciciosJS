@@ -8,7 +8,7 @@
 
 let aVariable = 42
 let bVariable = aVariable // bVariable equals 42
-bVariable = 0 // bVariable now equals 0, tu aVariable stills 42
+bVariable = 0 // bVariable now equals 0, but aVariable stills 42
 
 /**
  * Don't change next lines.
