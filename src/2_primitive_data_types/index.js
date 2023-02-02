@@ -8,7 +8,7 @@
  * - undefined is the kind of data when no data are provided.
  * - null is the kind of data for avoiding providing data. 
  * 
- * Exercice:
+ * Exercise:
  * Declare five variables and assing values to each:
  * - Assign a number to myNumber.
  * - Assign a string to myString.
