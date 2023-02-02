@@ -6,7 +6,7 @@
  * We can declare a variable and assign a value in one step too.
  * It's possible to reassign a new variable value any time. They are "mutables".
  * 
- * Exercice:
+ * Exercise:
  * - In one line, declate a new variable named "myEmptyVariable".
  * - In the next line, declare a new variable named "myBornYear".
  * - In the next line, declare a new variable "myAge" and assign the value 42 to it.

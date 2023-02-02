@@ -1,7 +1,7 @@
 /**
  * You can use a variable name in place his value, any way.
  * 
- * Exercice:
+ * Exercise:
  * - Declare a new variable named "myVariable" and assign the 42 value to it
  * using "secondVariable" for this.
  */
