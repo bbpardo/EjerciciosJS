@@ -27,8 +27,7 @@
  * let iEat = iAmHungry && ( iHaveDisses || (iHaveMoney && itsWeekday) )
  * 
  * Exercise:
- * - Replace the ❓ with the comparison operator who provides a true for each expression.
- * - May be multiple comparison operators provides a true.
+ * - Set the variable values to get to go to the beach
  */
 
 let itsSunny = false
