@@ -7,7 +7,7 @@
  * 
  * Exercise:
  * - Declare a variable named "primes" and assign to it
- * a array containin the five first prime numbers: 2, 3, 5, 7, 13
+ * a array containin the five first prime numbers: 2, 3, 5, 7, 11
  */
 
 // Write your code here.
