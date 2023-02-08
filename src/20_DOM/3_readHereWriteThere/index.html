@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="resposta.js" type="module"></script>
+    <script src="test.js" type="module"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Obter os obxetos do DOM</h1>
+    <section>
+        <h1>Apuntamentos</h1>
+        <p>Os strings en JS teñen <a target="_blank" href="https://www.w3schools.com/js/js_string_methods.asp">un bo número de métodos</a> que permiten facer moitas cousas.</p>
+        <p>Un dos métodos é <code>.toUpperCase</code></p>
+        <code>
+            const texto = "Hola, que tal" <br>
+            const textoMaiusculas = texto.toUpperCase() <br>
+            // textoMaiusculas é "HOLA, QUE TAL"
+        </code>
+    </section>
+    <section>
+        <h1>Exercicio</h1>
+        <ol>
+            <li>Captura o <code>textarea</code> nunha constante <code>entradaDoTexto</code>.</li>
+            <li>Captura o <code>p</code> con <code>id="enMaiusculas"</code> nunha constante <code>saidaDoResultado</code>.</li>
+            <li>
+                Define unha función chamada <code>actualizaSaidaEnMaiusculas</code><div class="br"></div>
+                Será algo como <code>function actualizaSaidaEnMaiusculas() {}</code>
+            </li>
+            <li>No bloque da funcion <code>{}</code>, define o seguinte proceso</li>
+                <ol>
+                    <li>Asignamos á constante <code>textoIntroducido</code> o valor do atributo <code>entradaDoTexto.value</code></li>
+                    <li>Asignamos á constante <code>textoEnMaiusculas</code> o valor de <code>textoIntroducido.toUpperCase()</code>.</li>
+                    <li>Asignamos á propiedade <code>saidaDoResultado.innerText</code> o valor de textoEnMaiusculas</li>
+                </ol>
+            <li>
+                Vincula a función <code>actualizaSaidaEnMaiusculas</code> ó evento <code>"input"</code> de <code>entradaDoTexto</code>.<br>
+                Faino empregando <code>entradaDoTexto.addEventListener</code>.
+            </li>
+        </ol>
+        <p>Escribe o código no ficheiro <code>./resposta.js</code></p>
+        <p>Consulta a consola de JS do navegador para ver os erros que se podan estar a producir.</p>
+        <textarea cols="30" rows="3"></textarea>
+        <p id="enMaiusculas"></p>
+    </section>
+    <section>
+        <h2>Test</h2>
+        <p>O exercicio está resolto?:<span id="test">false</span></p>
+    </section>
+</body>
+</html>
