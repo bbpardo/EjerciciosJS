@@ -4,8 +4,3 @@ code {
     border-radius: 0.7em; /* 0.5em + 0.2em */
     padding: 0.2em;
 }
-
-video {
-    width: 30%;
-    border-style: solid;
-}
