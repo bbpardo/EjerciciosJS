@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="resposta.js" type="module"></script>
+    <script src="test.js" type="module"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Múltiples tarefas</h1>
+    <section>
+        <h1>Apuntamentos</h1>
+        <p>Con frecuencia, é necesario aplicar múltiples procesos á información para chegar ó resultado que procuramos.</p>
+        <p>Para este exercicio necesitaremos coñecer cántos <strong>caracteres</strong> ten un string, pero tamén cantas <strong>palábras</strong>.</p>
+        <p>Os <code>string</code> en JavaScript teñen unha propiedade <code>.length</code> que nos dí o número de caracteres que ten o string.</p>
+        <p>Pero JavaScript non mañexa o concepto de "palabras" así que teremos que pensar cómo conseguir saber o número de palabras no string.</p>
+        <p>Deixando a un lado a informática ¿Cómo sabes tí cantas palabras ten un texto? ¿Cómo sabes onde empeza e remata unha palabra?.</p>
+        <p>Os strings dispoñen dun método que nos permite trocear o <code>string</code> en pedaciños, partindo por cada sitio onde se atope o caracter que indiquemos.</p>
+        <p>Cando o empregamos, obtemos un <strong>array</strong> no que cada elemento é un trociños do <code>string</code> orixinal.</p>
+        <code>
+            const textoInicial = "Ola, que tal"<br>
+            const textoDivididoPorEspacios = textoInicial.split(" ")<br>
+            // textoDivididoPorEspacios conten ["Ola,","que","tal"]
+        </code>
+        <p>Os <code>array</code> tamén dispoñen da propiedade <code>.length</code>, así que é dodado saber cantos elementos hai nun <code>array</code>.</p>
+        <p>¿Ves xa o camiño para saber o número de palabras nun string?</p>
+    </section>
+    <section>
+        <h1>Exercicio</h1>
+        <p>Imos contar as letras e palábras mentras se escriben nun elemento <code>textarea</code>.</p>
+        <video src="video.webm" autoplay loop></video>
+        <p>Escribe o código no ficheiro <code>./resposta.js</code></p>
+        <p>Consulta a consola de JS do navegador para ver os erros que se podan estar a producir.</p>
+        <ol>
+            <li>Captura o <code>textarea</code> e os <code>span</code> con id <code>numeroCaracteres</code> e <code>numeroPalabras</code> e almacénaos nas constantes <code>entradaDoTexto</code>, <code>saidaNumeroCaracteres</code> e <code>saidaNumeroPalabras</code>.</li>
+            <li>Calcula e amosa o número de caracteres introducidos no <code>textarea</code>.</li>
+            <ol type="a">
+                <li>
+                    Define unha función chamada <code>actualizaNumeroCaracteres</code><br>
+                    Esa función ten que:
+                </li>
+                <ol>
+                    <li>Obter o <code>string</code> do <code>.value</code> do <code>textarea</code>.</li>
+                    <li>Obter a lonxitude do <code>string</code> que acadamos no paso anterior accedendo á propiedade <code>.length</code> do mesmo.</li>
+                    <li>Asignar a lonxitude obtida previamente ó atributo <code>.innerText</code> do <code>span</code> con id <code>numeroCaracteres</code>.</li>
+                </ol>
+                <li>Engade un manexador para o evento <code>"input"</code> no <code>textarea</code> para que execute a función <code>actualizaNumeroCaracteres</code>.</li>
+            </ol>
+            <p>Chegado este punto xa deberías de poder ver o número de caracteres introducido no textarea.</p>
+            <li>Calcula e amosa o número de palabras introducidos no <code>textarea</code>.</li>
+            <ol type="a">
+                <li>
+                    Define unha función chamada <code>actualizaNumeroPalabras</code><br>
+                    Esa función ten que:
+                </li>
+                <ol>
+                    <li>Obter o <code>string</code> do <code>.value</code> do <code>textarea</code>.</li>
+                    <li>Obter una versión fragmentada do <code>string</code> anterior empregando o seu método <code>.split()</code> pasandolle un espacio (<code>" "</code>) como parámetro.</li>
+                    <li>Obter a lonxitude do <code>array</code> que acadamos no paso anterior accedendo á propiedade <code>.length</code> do mesmo.</li>
+                    <li>Asignar a lonxitude obtida previamente ó atributo <code>.innerText</code> do <code>span</code> con id <code>numeroPalabras</code>.</li>
+                </ol>
+                <li>Engade un manexador para o evento <code>"input"</code> no <code>textarea</code> para que execute a función <code>actualizaNumeroPalabras</code>.</li>
+            </ol>
+        </ol>
+        <textarea cols="30" rows="3"></textarea>
+        <p>Número de caracteres: <span id="numeroCaracteres"></span></p>
+        <p>Número de palabras: <span id="numeroPalabras"></span></p>
+    </section>
+    <section>
+        <h2>Test</h2>
+        <p>O exercicio está resolto?:<span id="test">false</span></p>
+    </section>
+</body>
+</html>
