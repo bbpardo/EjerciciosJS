@@ -16,15 +16,19 @@
  * 
  * Example 1:
  * let iAmHungry = true
- * let iHaveDisses = true
- * let iEat = iAmHungry && iHaveDisses
+ * let iHaveFood = true
+ * let iEat = iAmHungry && iHaveFood
  * 
  * Example 2:
  * let iAmHungry = true
  * let iHaveFood = false
  * let iHaveMoney = true
  * let itsWeekday = true
- * let iEat = iAmHungry && ( iHaveDisses || (iHaveMoney && itsWeekday) )
+ * let iEat = iAmHungry && ( iHaveFood || (iHaveMoney && itsWeekday) )
+ // TODO: Exemplo paso a paso
+ * let podoComprar = iHaveMoney && itsWeekday
+ * let tenhoAccesoAComida = iHaveFood || podoComprar
+ * let iEat = iAmHungry && tenhoAccesoAComida
  * 
  * Exercise:
  * - Set the variable values to get to go to the beach

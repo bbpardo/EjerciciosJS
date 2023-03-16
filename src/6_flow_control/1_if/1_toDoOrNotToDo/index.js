@@ -14,8 +14,8 @@
  * Exercise:
  * 
  * Write a function "divisionDe" that recives two values and
- * returns the values division only if both are numbers and 
- * second one is not zero.
+ * returns the division for the two numbers only if second one
+ * is not zero.
  * 
  */
 
